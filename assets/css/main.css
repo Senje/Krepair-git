@@ -283,7 +283,8 @@ body {
 }
 
 .breadcrumbs {
-  padding-top: 45px;
+  padding-top: 20px;
+  padding-bottom: 114px;
   font-size: 16px;
 }
 
@@ -520,7 +521,6 @@ body {
 
 .title-wrapper {
   display: grid;
-  align-items: center;
   justify-content: space-between;
   row-gap: 25px;
   grid-template-columns: repeat(2, 1fr);
@@ -889,6 +889,14 @@ textarea::placeholder {
   height: 100%;
 }
 
+.popup .feedback__text {
+  height: auto;
+}
+
+.popup .feedback__text textarea {
+  height: auto;
+}
+
 .upload-file__wrapp {
   position: absolute;
   width: 33px;
@@ -977,7 +985,7 @@ textarea::placeholder {
   position: fixed;
   width: 100%;
   height: 100%;
-  top: 20%;
+  top: 50px;
   left: 0;
   opacity: 0;
   transition: 0.4 opacity;
@@ -988,6 +996,7 @@ textarea::placeholder {
 }
 
 .popup-wrapper {
+  position: relative;
   background-color: #F7F5F5;
   padding: 45px;
   border: 1px solid #E1E1E1;
@@ -1050,6 +1059,31 @@ textarea::placeholder {
   .footer-wrapper > *:nth-child(4) {
     margin-left: 136px;
   }
+  .about-column__wrapp {
+    padding: 23px 25px 69px 35px;
+  }
+  .employers {
+    padding-top: 17px;
+  }
+}
+.about-column__wrapp {
+  padding: 23px 25px 69px 35px;
+}
+
+.about-column__wrapp * {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  /* or 32px */
+  letter-spacing: -0.05em;
+  color: #000000;
+}
+
+.for-client__title {
+  font-weight: 600;
+  margin-bottom: 30px;
 }@media (max-width: 1140px) and (min-width: 765px) {
   body {
     font-size: 14px;
@@ -1171,6 +1205,9 @@ textarea::placeholder {
   }
   .nav {
     margin-left: 2em;
+  }
+  .advantages-card {
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 765px) {
@@ -1441,6 +1478,9 @@ textarea::placeholder {
   }
   .hero-about__btn > * {
     width: 100%;
+  }
+  .employers {
+    margin-top: 30px;
   }
 }@font-face {
   font-family: "Inter";
