@@ -382,7 +382,6 @@ body {
 
 .reviews-wrapper {
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .card-gray {
@@ -1367,8 +1366,14 @@ textarea::placeholder {
   .error_404 div {
     margin-top: 50px;
   }
+  .reviews-wrapper {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 765px) {
+  .reviews-wrapper {
+    flex-wrap: wrap;
+  }
   .error_404 {
     text-align: center;
     padding: 80px 0;
