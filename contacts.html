@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Application</title>
+  <script type="module" crossorigin src="./assets/js/main.js"></script>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div id="wrapper">
+    <header class="header">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="./assets/img/logo.svg" alt="KRepair">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="./services.html" class="nav-link">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./price.html" class="nav-link">Прайс-лист</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./about.html" class="nav-link">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./details.html" class="nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="mobile-menu">
+                    <div class="logo">
+                        <img src="./assets/img/footer-logo.svg" alt="footer-logo">
+                    </div>
+                    <ul class="mobile-menu__list">
+                        <li><a href="./services.html">Услуги</a></li>
+                        <li><a href="#">Ремонт аудио техники</a></li>
+                        <li><a href="#">Ремонт видео техники</a></li>
+                        <li><a href="#">Ремонт телефонов</a></li>
+                        <li><a href="#">Ремонт электротранспорта</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <a href="tel:+74992262928">+7 499 226 29 28</a>
+                </div>
+                <div class="menu-burger">
+                    <span></span>
+                </div>
+            </div>
+    </header>
+<div class="container">
+    <div class="breadcrumbs black">
+        <a href="/">Главная</a>
+        <span>/</span>
+        <a href="#">Контакты</a>
+    </div>
+
+</div>
+<section class="map">
+    <div class="map__info dark__bg border-radius">
+        <img src="./assets/img/footer-logo.svg" alt="footer-logo">
+        <p>Москва, ул Шарикоподшипниковская д.4 к.4а</p>
+        <p>info@krepair.ru</p>
+        <p class="w-600">+7 499 226 29 28</p>
+    </div>
+    <img src="./assets/img/map.jpg" alt="map">
+</section>
+
+<section class="feedback section-space">
+    <div class="container">
+        <div class="title-wrapper">
+            <div class="services-title">
+                <h2 class="main-title white">У вас остались
+                    <div class="pink">вопросы?</div>
+                </h2>
+            </div>
+            <p class="main-subtitle white">
+                Оставьте заявку, мы свяжемся с вами<br>и ответим на них
+            </p>
+        </div>
+        <div class="feedback__window">
+            <div class="grid">
+                <div class="feedback__input">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Телефон*">
+                </div>
+                <div class="feedback__text">
+                    <textarea name="" cols="30" rows="10"
+                        placeholder="Опишите проблему и добавьте видео неисправности"></textarea>
+                    <div class="upload-file__wrapp">
+                        <label for="myfile" class="label"><img src="./assets/img/upload-file.svg" alt="upload-file"></label>
+                        <input type="file" class="upload-file" id="myfile" name="myfile" multiple>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback__submit">
+                <input type="button" class="btn__pink" value="Оставить заявку">
+                <p class="w-600">Нажимая на данную кнопку вы соглашаетесь<br>с политикой конфиденциальности</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img src="./assets/img/footer-logo.svg" alt="footer-logo">
+            </div>
+            <ul class="footer-column">
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="footer-column">
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Ремонт аудио техники</a></li>
+                <li><a href="#">Ремонт видео техники</a></li>
+            </ul>
+            <ul class="footer-column">
+                <li><a href="#">Ремонт телефонов</a></li>
+                <li><a href="#">Ремонт электротранспорта</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<div class="popup">
+    <div class="popup-wrapper">
+        <h3 class="pink">Оставьте заявку </h3>
+        <p>Мы свяжемся с вами в ближайшее время</p>
+        <div class="feedback__input">
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Телефон*">
+        </div>
+        <div class="feedback__text">
+            <textarea name="" cols="30" rows="10"
+                placeholder="Опишите проблему и добавьте видео неисправности"></textarea>
+            <div class="upload-file__wrapp">
+                <label for="myfile" class="label"><img src="./assets/img/upload-file.svg" alt="upload-file"></label>
+                <input type="file" class="upload-file" id="myfile" name="myfile" multiple>
+            </div>
+        </div>
+        <div class="feedback__submit">
+            <input type="button" class="btn__pink" value="Оставить заявку">
+            <p class="w-600">Нажимая на данную кнопку вы соглашаетесь<br>с политикой конфиденциальности</p>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>
