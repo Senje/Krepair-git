@@ -374,7 +374,8 @@ body {
   border-radius: 20px;
 }
 
-.advantages-cards, .reviews-wrapper {
+.advantages-cards,
+.reviews-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -1101,7 +1102,8 @@ textarea::placeholder {
   padding: 30px;
 }
 
-.reviews-block_wrapp, .reviews-block_wrapp > div {
+.reviews-block_wrapp,
+.reviews-block_wrapp > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1154,6 +1156,56 @@ textarea::placeholder {
   /* or 28px */
   letter-spacing: -0.05em;
   color: #000000;
+}
+
+.error_404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.error_404 h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 175%;
+  /* identical to box height, or 140px */
+  text-align: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #F03957;
+}
+
+.error_404 h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 250px;
+  line-height: 130%;
+  /* identical to box height, or 438px */
+  text-align: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.error_404 p {
+  max-width: 506px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 175%;
+  /* or 42px */
+  letter-spacing: -0.05em;
+  color: #000000;
+}
+
+.error_404 div {
+  margin-top: 50px;
 }@media (max-width: 1140px) and (min-width: 765px) {
   body {
     font-size: 14px;
@@ -1292,8 +1344,47 @@ textarea::placeholder {
   .read-more > * + * {
     margin-top: 20px;
   }
+  .reverse > .services-catalog__image {
+    margin: 0;
+    margin-right: 50px;
+  }
+  .services-catalog__image {
+    margin-left: 50px;
+  }
+  .error_404 {
+    text-align: center;
+    padding: 80px 0;
+  }
+  .error_404 h1 {
+    font-size: 60px;
+  }
+  .error_404 h2 {
+    font-size: 180px;
+  }
+  .error_404 p {
+    font-size: 20px;
+  }
+  .error_404 div {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 765px) {
+  .error_404 {
+    text-align: center;
+    padding: 80px 0;
+  }
+  .error_404 h1 {
+    font-size: 30px;
+  }
+  .error_404 h2 {
+    font-size: 180px;
+  }
+  .error_404 p {
+    font-size: 20px;
+  }
+  .error_404 div {
+    margin-top: 50px;
+  }
   .services-space__top {
     padding-top: 60px;
   }
@@ -1423,6 +1514,7 @@ textarea::placeholder {
     display: none !important;
   }
   .footer-wrapper {
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 30px;
   }
@@ -1431,9 +1523,18 @@ textarea::placeholder {
   }
   .services-catalog__image {
     order: 1;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .reverse > .services-catalog__image {
+    margin: 0;
   }
   .services-catalog__about {
     order: 0;
+  }
+  .hyro-margin {
+    margin: 0 !important;
   }
   .services-catalog > .btn__black-small {
     margin-top: 40px;
