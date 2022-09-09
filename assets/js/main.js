@@ -97,14 +97,9 @@ $(document).ready(() => {
   $(".btn-popup__close").click(function() {
     $(".popup").removeClass("active");
   });
-  $(document).on("click", function(e) {
-    if (!$(e.target).closest(".btn-popup").length) {
+  $(document).mouseup(function(e) {
+    if ($(".popup").has(e.target).length === 0) {
       $(".popup").removeClass("active");
     }
-    if (!$(e.target).closest(".menu-burger").length) {
-      $(".menu-burger").removeClass("active");
-      $(".mobile-menu").removeClass("active");
-    }
-    e.stopPropagation();
   });
 });

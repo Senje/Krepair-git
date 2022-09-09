@@ -502,6 +502,11 @@ body {
 }
 
 .footer-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 20px;
   list-style: none;
 }
 
@@ -514,10 +519,6 @@ body {
   /* identical to box height, or 28px */
   letter-spacing: -0.05em;
   color: #D9D9D9;
-}
-
-.footer-column > li + li {
-  margin-top: 20px;
 }
 
 .footer-wrapper {
@@ -1371,6 +1372,9 @@ textarea::placeholder {
   }
 }
 @media (max-width: 765px) {
+  .footer-column {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
   .reviews-wrapper {
     flex-wrap: wrap;
   }
