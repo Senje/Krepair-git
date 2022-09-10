@@ -1368,11 +1368,17 @@ textarea::placeholder {
   .error_404 div {
     margin-top: 50px;
   }
+  .reviews-block {
+    max-width: 100%;
+  }
   .reviews-wrapper {
     flex-wrap: wrap;
   }
 }
 @media (max-width: 765px) {
+  .reviews-block {
+    max-width: 100%;
+  }
   .footer-column {
     grid-template-columns: repeat(auto-fit, 200px);
   }
