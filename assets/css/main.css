@@ -1096,6 +1096,10 @@ textarea::placeholder {
   margin-bottom: 30px;
 }
 
+.catalog__items a {
+  color: inherit;
+}
+
 .reviews-block {
   background-color: #F7F5F5;
   border-radius: 15px;
