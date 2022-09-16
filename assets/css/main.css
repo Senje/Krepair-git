@@ -567,6 +567,7 @@ body {
 
 .catalog__items > li {
   display: flex;
+  align-items: center;
 }
 
 .catalog__items > li::before {
@@ -1211,6 +1212,10 @@ textarea::placeholder {
 
 .error_404 div {
   margin-top: 50px;
+}
+
+.audio-wrapper li {
+  margin-left: 15px;
 }@media (max-width: 1140px) and (min-width: 765px) {
   body {
     font-size: 14px;
