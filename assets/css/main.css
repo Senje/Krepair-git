@@ -1380,6 +1380,9 @@ textarea::placeholder {
   }
 }
 @media (max-width: 765px) {
+  .hero-about__title {
+    margin-top: 0;
+  }
   .reviews-block {
     max-width: 100%;
   }
