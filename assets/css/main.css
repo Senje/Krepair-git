@@ -560,7 +560,7 @@ body {
   font-size: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 30px 10px;
+  grid-gap: 30px 30px;
   width: 100%;
   z-index: 1;
 }
@@ -1215,7 +1215,12 @@ textarea::placeholder {
 }
 
 .audio-wrapper li {
-  margin-left: 15px;
+  margin-left: 25px;
+}
+
+.audio-wrapper .catalog__items {
+  align-self: center;
+  display: flex;
 }@media (max-width: 1140px) and (min-width: 765px) {
   body {
     font-size: 14px;
