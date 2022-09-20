@@ -600,6 +600,7 @@ body {
   background-color: #F7F5F5;
   padding: 30px;
   border-radius: 0 0 20px 20px;
+  text-align: center;
 }
 
 .employer-block > img {
@@ -962,7 +963,7 @@ textarea::placeholder {
 
 .map__info {
   max-width: 463px;
-  height: 323px;
+  height: auto;
   position: absolute;
   top: 18%;
   left: 20%;
@@ -1514,6 +1515,29 @@ textarea::placeholder {
   .only-mobile {
     display: inline-block;
   }
+  .hidden-arrows > div {
+    display: inline-block !important;
+    position: static;
+    max-height: 15px;
+    max-width: 7px;
+  }
+  .reviews-block_wrapp > div {
+    position: relative;
+  }
+  .reviews-block_wrapp > p, .reviews-block_wrapp > div {
+    margin-top: 20px;
+  }
+  .reviews-block_wrapp > div > svg {
+    position: absolute;
+    top: -40px;
+    right: 0;
+  }
+  .hidden-arrows {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
   .only-desktop {
     display: none;
   }
@@ -1583,6 +1607,17 @@ textarea::placeholder {
   .header__contacts {
     display: none;
   }
+  .slider {
+    max-width: 100%;
+  }
+  .slider-item {
+    max-height: 70px;
+    border-radius: 5px;
+  }
+  .slider-item img {
+    max-width: 60%;
+    height: auto;
+  }
   .menu-burger {
     display: flex;
     align-items: center;
@@ -1593,6 +1628,10 @@ textarea::placeholder {
   }
   .header__inner {
     padding: 0 15px;
+    align-items: center;
+  }
+  .services-price__wrap {
+    flex-wrap: nowrap;
   }
   .menu-burger::before,
 .menu-burger span,
