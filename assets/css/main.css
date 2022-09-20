@@ -1524,7 +1524,8 @@ textarea::placeholder {
   .reviews-block_wrapp > div {
     position: relative;
   }
-  .reviews-block_wrapp > p, .reviews-block_wrapp > div {
+  .reviews-block_wrapp > p,
+.reviews-block_wrapp > div {
     margin-top: 20px;
   }
   .reviews-block_wrapp > div > svg {
@@ -1630,8 +1631,11 @@ textarea::placeholder {
     padding: 0 15px;
     align-items: center;
   }
-  .services-price__wrap {
+  .microphones .grid__list-content > .grid_item:not(:last-child) {
     flex-wrap: nowrap;
+  }
+  .microphones .grid__list-content > .grid_item:not(:last-child) > div:first-child {
+    flex-basis: 65%;
   }
   .menu-burger::before,
 .menu-burger span,
