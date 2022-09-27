@@ -962,11 +962,12 @@ textarea::placeholder {
 }
 
 .map__info {
+  z-index: 1;
   max-width: 463px;
   height: auto;
   position: absolute;
-  top: 18%;
-  left: 20%;
+  top: 25%;
+  left: 10%;
   padding: 50px 55px;
   font-family: "Inter";
   font-style: normal;
@@ -976,6 +977,10 @@ textarea::placeholder {
   /* identical to box height, or 28px */
   letter-spacing: -0.05em;
   color: #EFEFEF;
+}
+
+.map iframe {
+  width: 100%;
 }
 
 .map__info > p {
@@ -1055,6 +1060,16 @@ textarea::placeholder {
 
 .body-popup {
   overflow: hidden;
+}
+
+.reviews-block_wrapp > div > svg {
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+.reviews-block {
+  position: relative;
 }
 
 .feedback__submit p {
